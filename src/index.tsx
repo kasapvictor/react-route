@@ -1,6 +1,17 @@
 import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { App } from '@app/App';
+import '@app/theme/styles';
+import '@app/styles.css';
+
+import { Root } from '@app/routes';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+  },
+]);
 
 const init = () => {
   const rootContainer = document.getElementById('root');
@@ -8,7 +19,7 @@ const init = () => {
   if (rootContainer) {
     const root = createRoot(rootContainer);
 
-    root.render(<App />);
+    root.render(<RouterProvider router={router} />);
   }
 };
 

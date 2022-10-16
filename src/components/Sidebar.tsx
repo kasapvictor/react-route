@@ -3,6 +3,8 @@ import { Link, useLoaderData } from 'react-router-dom';
 export const Sidebar = () => {
   const { contacts } = useLoaderData();
 
+  //  console.log(contacts);
+
   return (
     <>
       <div id="sidebar">

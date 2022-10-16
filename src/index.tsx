@@ -13,6 +13,9 @@ const contactsLoader = async () => {
   return { contacts };
 };
 
+// остановился на этом пункте
+// https://reactrouter.com/en/main/start/tutorial#data-writes--html-forms
+
 const router = createBrowserRouter([
   {
     path: '/',

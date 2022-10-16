@@ -6,12 +6,19 @@ import '@app/styles.css';
 
 import { Home, Error as ErrorPage } from '@app/pages';
 import { Contact } from '@app/features/Contact';
+import { getContacts } from '@app/contacts';
+
+const contactsLoader = async () => {
+  const contacts = await getContacts();
+  return { contacts };
+};
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
     errorElement: <ErrorPage />,
+    loader: contactsLoader,
     children: [
       {
         path: 'contacts/:contactId',

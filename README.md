@@ -1,8 +1,4 @@
-## React shop example
-
-~~~
-[!] The project uses RTK
-~~~
+## React Router Dom 6.4.1
 
 ### Links
 - Api key from [fortniteapi.io](https://dashboard.fortniteapi.io)

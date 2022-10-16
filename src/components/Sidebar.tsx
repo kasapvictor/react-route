@@ -1,4 +1,4 @@
-export const Root = () => {
+export const Sidebar = () => {
   return (
     <>
       <div id="sidebar">
